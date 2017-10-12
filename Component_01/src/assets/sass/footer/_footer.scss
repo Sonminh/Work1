@@ -1,0 +1,82 @@
+footer.c-footer{
+	margin-top:50px;
+		div.footer-top{
+			min-width:1000px;
+			width:100%;
+			background: #ffc600;
+			height:286px;
+			div.container{
+				div.left{
+					width:50%;
+					float:left;
+					margin: 30px 0 ;
+					div.logo-footer{
+						margin-bottom:25px;
+						img{
+
+						}
+					}
+					div.info{
+						float:left;
+						margin-right:20px;
+						p{
+							@include setFont(16px,#333333, bold, $font-gothic);
+							text-decoration: none !important;
+						}
+					}
+					div.add{
+						floar:left;
+						p{
+							@include setFont(16px,#333333, 500, $font-gothic);
+							span{
+								margin-left:15px;
+							}
+						}
+					}
+				}
+				div.right{
+					position:absolute;
+					left:50%;
+					width:50%;
+					float:left;
+					iframe{
+						width:100%;
+					}
+				}
+		}
+	}
+	div.footer-bottom{
+		background: #333333;
+		min-width:1000px;
+		width:100%;
+		div.container{
+			div.menu-footer{
+				text-align:center !important;
+				padding:30px 0;
+				border-bottom: 1px solid #666666;
+				ul.menu{
+					display:inline-block;
+					li{
+						float:left;
+						a{
+							@include setFont(14px, #fff);
+							display:block;
+							padding: 0 10px;
+							border-right: 1px solid #FFF;
+						}
+
+					}
+					@include clearfix;
+				}
+			}
+			div.copy-right{
+				p{
+					text-align:center;
+					@include setFont(12px, #666666);
+					padding:15px 0;
+				}
+			}
+		}
+
+	}
+}

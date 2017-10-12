@@ -1,0 +1,48 @@
+div.c-widget{
+	margin-top:30px;
+	div.container{
+		div.box{
+			div.box-title{
+				background: url('../img/bg_widget_01.png');
+				width:240px;
+				height:58px;
+				line-height:58px;
+				p{
+					margin-left:20px;
+					@include setFont(20px, #333333,bold)
+				}
+			}
+			div.box-list{
+				width:240px;
+				box-sizing:border-box;
+				border: 4px solid #ffc600;
+				border-top: none;
+				ul{
+					li{
+						a{
+							display:block;
+							height:52px;
+							border-bottom: 1px solid #dddddd;
+							line-height:52px;
+							padding-left:20px;
+							@include setFont(16px,#006699,normal,$font-gothic);
+							position:relative;
+							&:after{
+								font-family: FontAwesome;
+    				  			content: "\f105";
+    				  			position:absolute;
+    				  			right:10px;
+    				  			@include setFont(16px,#ffc600);
+							}
+						}
+						&:last-child{
+							a{
+								border-bottom:none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

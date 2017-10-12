@@ -1,0 +1,27 @@
+div.c-list-images{
+	margin-top:50px;
+	div.container{
+		div.box-images{
+			width:690px;
+			div.img-large{
+				img{
+
+				}
+			}
+		}
+		div.box-img-small{
+			div.img-small{
+				float:left;
+				margin:10px 10px 10px 0;
+				img{
+					display:block;
+				}
+				&:last-child{
+					margin-right:0px;
+				}
+			}
+			@include clearfix;
+		}
+	}
+}
+

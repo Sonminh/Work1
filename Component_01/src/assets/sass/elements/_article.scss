@@ -1,0 +1,40 @@
+div.c-article{
+	div.container{
+		div.list-article{
+			p{
+				@include setFont(24px,#006699,bold, $font-gothic);
+				&:before{
+					  font-family: FontAwesome;
+    				  content: "\f105";
+					@include setFont(24px,#ffc600,bold);
+				}
+			}
+		}
+		div.info-article{
+			img{
+
+			}
+			div.text{
+				width:330px;
+				height: 83px;
+				background: #ffde6a;
+				display:table-cell;
+				vertical-align: middle;
+				div.text-article{
+					float:left;
+					margin-left:20px;
+					p{
+						@include setFont(15px,#333333,bold);
+					}
+				}
+				div.subtitle-article{
+					float:left;
+					margin-left:20px;
+					p{
+						@include setFont(16px,#333333,normal);
+					}
+				}
+			}
+		}
+	}
+}

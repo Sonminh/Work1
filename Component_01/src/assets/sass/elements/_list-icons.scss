@@ -1,0 +1,48 @@
+div.c-list-icons{
+	margin-top:50px;
+	div.container{
+		div.icons{
+			ul.list-icons{
+				li{
+					float:left;
+					a{
+						display:block;
+						width:40px;
+						height:40px;
+						border:1px solid #dddddd;
+						box-sizing:border-box;
+						text-align:center;
+						line-height: 40px;
+						margin-right:7px;
+						@include setFont(16px,#333333);
+						&.active{
+							background: #ffc600;
+							border:none;
+						}
+						i{
+
+						}
+					}
+				}
+				@include clearfix;
+			}
+		}
+		div.next-page{
+			margin-top:50px;
+			ul.list-next-page{
+				li{
+					float:left;
+					a{
+						display:block;
+						padding:13px 20px;
+						border:1px solid #dddddd;
+						margin-right: 5px;
+						@include setFont(16px,#333333);
+						i{}
+					}
+				}
+				@include clearfix;
+			}
+		}
+	}
+}

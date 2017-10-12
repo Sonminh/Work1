@@ -1,0 +1,54 @@
+header.c-header{
+		.header-top{
+			width: 100%;
+			min-width: 1000px;
+			background: #ffc600;
+			div.container{
+				p{
+					padding:10px 0;
+					@include  setFont(12px, #333333,normal,$font-gothic);
+				}
+			}
+		}
+		.header-bottom{
+			height:70px;
+			div.container{
+				> a{
+					float:left;
+					margin-right: 15px;
+				}
+				ul.menu{
+					li{
+						float:left;
+						height:70px;
+						line-height:70px;
+						box-sizing: border-box;
+						text-align:center;
+						img{
+							height:100%;
+						}
+						a{
+							display:block;
+							@include  setFont(18px, #333333,bold,$font-gothic);
+							padding: 0px 17px;
+							i{
+								@include  setFont(18px, #ffc600);
+								padding-right: 10px;
+							}
+							span{
+								@include  setFont(18px, #fff,bold,$font-gothic);
+								padding-right: 10px;
+							}
+						}
+						&.active , &:hover{
+							border-bottom: 4px solid #ffc600;
+						}
+						&.email{
+							background: #124f93;
+							width:198px;
+						}
+					}
+				}
+			}
+		}
+}

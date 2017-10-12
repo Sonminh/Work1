@@ -1,0 +1,36 @@
+div.c-title{
+	margin-top:30px;
+	div.container{
+		div.service-title{
+			div.service{
+				height:138px;
+				background: url('../img/title_01.png') no-repeat;
+				text-align:center;
+				line-height:80px;
+				p{
+					@include setFont(42px,#333333, bold, $font-gothic);
+					span{
+						display:block;
+						@include setFont(26px,#333333, bold, $font-gothic);
+						line-height:10px;
+					}
+				}
+			}
+			div.works{
+				height:138px;
+				background: url('../img/title_02.png') no-repeat;
+				text-align:center;
+				line-height:80px;
+				margin-top:30px;
+				p{
+					@include setFont(42px,#333333, bold, $font-gothic);
+					span{
+						display:block;
+						@include setFont(26px,#333333, bold, $font-gothic);
+						line-height:10px;
+					}
+				}
+			}
+		}
+	}
+}
